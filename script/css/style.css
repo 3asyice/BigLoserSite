@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+* {
+  margin: 0 auto;
+}
+
+html,
+body {
+  margin: 0;
+  align-content: center;
+  background: linear-gradient(123deg, #8C5F4A, #FC914B);
+  color: #E0E0E0;
+  font-family: 'Merriweather', serif;
+}
+
+.horizontal-row {
+  display: block;
+  margin-top: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.number-div {
+  padding: 10px;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  margin: 10px;
+  display: block;
+  width: 90%;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+}
+
+.number-div:hover {
+  transform: scale(1.0);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  
+  50% {
+    opacity: 0.7;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.blink {
+  animation: blink 1s infinite;
+  /* Efeito de piscar */
+}
+
+.number-div:nth-child(3n+1) {
+  background-color: #ECCABD;
+  color: #764C38;
+  font-weight: 800;
+}
+
+.number-div:nth-child(3n+2) {
+  background-color: #ECCABD;
+  color: #764C38;
+  font-weight: 800;
+}
+
+.number-div:nth-child(3n) {
+  background-color: #ECCABD;
+  color: #764C38;
+  font-weight: 800;
+}
+section.horizontal-row div.number-div{
+  background: #ECCABD;
+  color:#764C38;
+  font-weight: 800;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+header {
+  position: fixed;
+  letter-spacing: -0.5px;
+  background-color: #FBEABF;
+  width: 60%;
+  display:flex;
+  text-align: justify;
+  color: #CCA562;
+}
+
+.img-1 {
+  align-self: flex-start;
+  float: left;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.align {
+  padding-top: 50px;
+  line-height: 3em;
+  text-align: center;
+  margin-left: 25px;
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.7);
+}
+
+.casos {
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 2em;
+  display: block;
+  margin: 70px auto;
+  text-align: center;
+  background-color: #ECCABD;
+  border: 5px solid rgba(255, 0, 0, 0.5);
+}
+
+.b {
+  color: rgba(255, 255, 255, 0.1);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  display: none;
+  background-color: rgba(50, 50, 50, 0.8);
+}
+
+.z {
+  color: rgba(255, 255, 255, 0.1);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  overflow: auto;
+  display: none;
+  background-image: linear-gradient(123deg, rgba(140, 95, 74, 1), rgba(0, 0, 0, 1));
+}
+
+p {
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: normal;
+  text-align: inline;
+}
+
+details,
+summary {
+  text-decoration: none;
+  text-align: left;
+  list-style: none;
+  color:#C38655;
+}
+
+.h4-red {
+  margin: 0;
+  margin-top: 5px;
+  text-shadow: 1px 1px 2px rgba(178, 39, 39, 1);
+  font-weight: 900;
+  float: left;
+  margin-left: 15px;
+  color: rgba(178, 39, 39, 1);
+}
+
+.or {
+  margin-top: 5px;
+  text-shadow: 1px 1px 2px rgba(216, 81, 0, 1);
+  font-weight: 900;
+  float: left;
+  margin-left: 15px;
+  color: #F4C8A0;
+}
+
+h2 {
+  color: #FCE7B5;
+  margin-left: 15px;
+  letter-spacing: -0.5px;
+  font-weight: 900;
+}
+
+h5 {
+  color: #FCE7B5;
+}
+
+h4 {
+  margin: 0;
+  font-weight: bold;
+  float: left;
+  margin-left: 15px;
+  color: #FCE7B5;
+}
+
+hr {
+  background-color: rgba(255, 0, 0, 1);
+  margin: 4px;
+  color: rgba(252, 0, 0, 1);
+}
+
+.p-date {
+  font-size: 12px;
+}
+
+.a {
+  display: inline-block;
+  margin: 0;
+  padding-top: 0;
+  text-align: top;
+  padding: 0;
+}
+
+.container,
+p {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+  background: linear-gradient(123deg, #EFD9AF, #EBD9BF, #EFD4B6);
+  color: #053768;
+  text-align: center;
+  font-style: italic;
+  padding: 20px 0;
+  border-top: 2px solid #000;
+  font-size: 0.8rem;
+}
+
+.share__div {
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.share__btn {
+  border: none;
+  border-radius: 15px;
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 10px;
+  text-align: center;
+  color: #045D95;
+  background-color: #8CECE4;
+}
+
+.share__btn:hover {
+  color: #D12450;
+  background-color: #00A387;
+}
+
+h1 span.blink {
+  font-family: 'Jersey 10', serif;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-style: normal;
+}
+
+.deuteromonios {
+  padding: 10px;
+  border-radius: 10px;
+  background: #F3CAA0;
+  color: #00FF71;
+  text-align: center;
+  width: 85.3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  top: 35%;
+  position: fixed;
+}
+
+@media (max-width: 600px) {
+
+  .number-div {
+    padding: 10px;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    margin-left:5%;
+    margin-right: 5%;
+    display:block;
+    width: 85%;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+  }
+  .number-div:nth-child(3n+1) {
+    background-color:#000;
+    color: #00FF50;
+  }
+  
+  .number-div:nth-child(3n+2) {
+    background-color: #000;
+    color:springgreen;
+  }
+  
+  .number-div:nth-child(3n) {
+    background-color: #000;
+    color: lime;
+  }
+  
+
+ }
+
+ /* Para telas médias (tablets) */
+ @media (min-width: 601px) and (max-width: 1024px) {
+   
+  .number-div {
+    padding: 10px;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    margin-left:5%;
+    margin-right: 5%;
+    display:block;
+    width: 86%;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+  }
+ 
+  .number-div:nth-child(3n+1) {
+    background-color:#000;
+    color: #00FF50;
+  }
+  
+  .number-div:nth-child(3n+2) {
+    background-color: #000;
+    color:springgreen;
+  }
+  
+  .number-div:nth-child(3n) {
+    background-color: #000;
+    color: lime;
+  }
+  
+ }
+
+ @media (min-width: 1025px) {
+  
+  .number-div {
+    padding: 15px;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    margin-left:5%;
+    margin-right: 5%;
+    display:block;
+    width: 87%;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+  }
+
+  .number-div:nth-child(3n+1) {
+    background-color:#000;
+    color: #00FF50;
+  }
+  
+  .number-div:nth-child(3n+2) {
+    background-color: #000;
+    color:springgreen;
+  }
+  
+  .number-div:nth-child(3n) {
+    background-color: #000;
+    color: lime;
+  }
+  .deuteromonios{
+    padding:10px;
+    border-radius: 10px;
+    background: #000;
+    color:#00FF71;
+    text-align: center;
+    width:60%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right:10%;
+    top:25%;
+    display: block;
+    position:fixed;
+  }
+  div.deuteromonios p{
+    hyphens: auto;
+    text-transform: uppercase;
+    text-align: justify;
+  }
+  div.deuteromonios img {
+    width:40%;
+    position:relative;
+  }
+ }
